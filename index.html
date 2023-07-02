@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meat charset="utf-8">
+    <meta name="viewport" content="width=device-width, , initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="code.js"></script>
+    <title>Github Clone</title>
+
+<body>
+  <!-- WRAPPER START -->
+  <div id="wrapper">
+    <!-- header start -->
+    <header>
+    <div id="main-header-box">
+      <!-- logo-nav box start-->
+      <div id="logo-nav-box">
+        <!-- logo start -->
+        <div class="logo-box">
+          <svg height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true" id="logo">
+            <path fill-rule="evenodd"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+            </path>
+          </svg>
+        </div>
+        <!-- logo end -->
+
+        <!--nav start-->
+        <nav id="main-nav">
+          <div class="close-logo-box">
+            <svg onclick="closeNav()" id="close-button" height="24" viewBox="0 0 12 16" version="1.1" width="18"
+              aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="link-box">
+            <ul id="m-link1" class="main-link main-link1" onclick="closeSubBox1()">
+              <li><a href="#">Why GitHub?</a></li>
+              <li class="link-arrow-down">
+                <svg class="arrow-down-logo" width="15px" height="15px" x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve">
+                  <path d="M1,1l6.2,6L13,1"></path>
+                </svg>
+              </li>
+            </ul>
+            <ul id="s-box1" class="sub-links-box sub-box1">
+                <li class="bold-link">Features<span class="bold-icon">&#8594;</span></li>
+                <li>Code review</li>
+                <li>Project menagment</li>
+                <li>Integrations</li>
+                <li>Actions</li>
+                <li>Packages</li>
+                <li>Security</li>
+                <li>Team menagment</li>
+                <li>Hosting</li>
+                <li class="bold-link bold1">Customer stories<span class="bold-icon">&#8594;</span></li>
+                <li class="bold-link">Security<span class="bold-icon">&#8594;</span></li>
+            </ul>
+          </div>
+
+          <div class="link-box">
+            <ul>
+              <li><a href="#">Enterprise</a></li>
+            </ul>
+          </div>
+
+          
+          <div class="link-box">
+            <ul id="m-link2" class="main-link main-link2" onclick="closeSubBox2()">
+              <li><a href="#">Explore</a></li>
+              <li class="link-arrow-down link-arrow">
+                <svg class="arrow-down-logo" width="15px" height="15px" x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve">
+                  <path d="M1,1l6.2,6L13,1"></path>
+                </svg>
+              </li>
+            </ul>
+            <ul id="s-box2" class="sub-links-box sub-box2">
+              <li class="bold-link bold2 border-bottom">Explore GitHub<span class="bold-icon">&#8594;</span></li>
+              <li>Learn & contribute</li>
+              <li>Topics</li>
+              <li>Collections</li>
+              <li>Trending</li>
+              <li>Learning Lab</li>
+              <li>Open source guides</li>
+              <li class="bold2 bold3 border-top">Connect with others</li>
+              <li>Events</li>
+              <li>Community forum</li>
+              <li>GitHub Education</li>
+          </ul>
+          </div>
+         
+
+          <div class="link-box">
+            <ul>
+              <li><a href="#">Marketplace</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box">
+            <ul id="m-link3" class="main-link main-link3" onclick="closeSubBox3()">
+              <li><a href="#">Pricing</a></li>
+              <li class="link-arrow-down link-arrow">
+                <svg class="arrow-down-logo" width="15px" height="15px" x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve">
+                  <path d="M1,1l6.2,6L13,1"></path>
+                </svg>
+              </li>
+            </ul>
+            <ul id="s-box3" class="sub-links-box sub-box3">
+              <li class="bold-link">Plans<span class="bold-icon">&#8594;</span></li>
+              <li>Compare plans</li>
+              <li>Contact Sales</li>
+              <li class="bold-link bold1">Nonprofit<span class="bold-icon">&#8594;</span></li>
+              <li class="bold-link">Education<span class="bold-icon">&#8594;</span></li>
+          </ul>
+          </div>
+
+          <form id="mob-form">
+              <input class="mob-input" type="text" placeholder="Search GitHub"/>
+              <button id="m-signin-button" class="form-button">Sign in</button>
+              <button id="m-signup-button" class="form-button">Sign up</button>
+          </form>
+          
+        </nav>
+        <!--nav end-->
+      </div>
+      <!-- logo-nav box end-->
+
+      <div id="form-mobbutton-box">
+        <!-- header form start -->
+        <form id="form">
+          <div class="input-div">
+            <input class="header-input" id="header-input" type="text" placeholder="Search GitHub"/>
+            <div id="pen-div">
+              <img src="images/pen.png" alt="Picture of pen in placeholder" />
+            </div>
+          </div>
+          <button id="signin-button" class="form-button">Sign in</button>
+          <button id="signup-button" class="form-button">Sign up</button>
+        </form>
+        <!-- header form end -->
+
+        <!-- mobile navigation button start -->
+        <div id="mobbutton-box" onclick="showNav()">
+          <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true" class="nav-button">
+            <path fill="#fff" fill-rule="evenodd"
+              d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z">
+            </path>
+          </svg>
+        </div>
+        <!-- mobile navigation button end -->
+      </div>
+    </div>  
+    </header>
+    <!-- header end -->
+
+    <!-- title box -->
+    <section id="main-title-box">
+      <section id="title-box">
+      <!-- title -->
+      <div id="title">
+        <h1 id="main-title">Built for developers</h1>
+        <p id="title-p">GitHub is a development platform inspired by the way you work. From <span class="title-p-span">open source</span> to <span class="title-p-span">business</span>, you can host and review code, manage projects, and build software alongside 40 million developers.</p>
+      </div>
+
+      <!-- title form -->
+      <div id="title-form-box" class="main-form-box">
+        <form id="title-form" class="main-form">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="title-form-inputs" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="title-form-inputs" />
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" class="title-form-inputs" />
+          <p>Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter. <span>Learn more</span>.</p>
+          <button type="button" id="title-form-button">Sign up for GitHub</button>
+          <p>By clicking "Sign up for GitHub", you agree to our <span>Terms of Service</span> and <span>Privacy Statement</span>. We'll occasionally send you account related emails.</p>
+        </form>
+      </div>       
+      </section>
+    </section>
+    <!-- MAIN START -->
+    <main>
+
+      <!-- new free box start-->
+      <section id="free-box" class="box">
+        <div id="free-news-box">
+          <div id="title-p-new-box">
+            <div id="new-box">
+              <p id="new">NEW</p>
+            </div>
+            <div id="title-p-box">
+              <h2>GitHub is now free for teams</h2>
+              <p>GitHub Free gives teams private repositories with unlimited collaborators at no cost.</p>
+            </div>
+          </div>
+          <div id="new-button-box">
+            <button id="new-button">Try GitHub Free</button>
+          </div>
+        </div>
+      </section>
+      <!-- new free box end-->
+
+      <!-- buisnesses box  start -->
+      <section id="business-box" class="box">
+        <div class="section-title">
+          <p>More than a 2.1 million bussineses and organizations use GitHub</p>
+        </div>
+        <div id="business-logo-box">
+          <li><img src="images/airbnb.png" alt="Airbnb logo"/></li>
+          <li><img src="images/sap.png" alt="SAP logo"/></li>
+          <li><img src="images/ibm.png" alt="IBM logo"/></li>
+          <li><img src="images/google.png" alt="Google logo"/></li>
+          <li><img src="images/paypal.png" alt="PayPal logo"/></li>
+          <li><img src="images/bloomberg.png" alt="Bloomberg logo"/></li>
+          <li><img src="images/spotify.png" alt="Spotify logo"/></li>
+          <li><img src="images/bird.png" alt="Bird logo"/></li>
+          <li><img src="images/facebook.png" alt="Facebook logo"/></li>
+          <li><img src="images/nodejs.png" alt="NodeJs logo"/></li>
+          <li><img src="images/nasa.png" alt="Nasa logo"/></li>
+          <li><img src="images/walmart.png" alt="Walmart logo"/></li>
+        </div>
+      </section>
+      <!-- buisnesses box  end -->
+
+      <!-- teams box start -->
+      <section class="main-box box">
+      <div class="title-box">
+        <p class="text1">GitHub for teams</p>
+        <h1>A better way to work together</h1>
+        <p class="text2">GitHub brings teams together to work through problems, move ideas forward, and learn from each other along the way.</p>
+        <button class="title-btn">Sign up your teams<span class="title-span">&rarr;</span></button>
+      </div>
+      <div id="teams-about-box">
+        <div id="teams-pic-box">
+          <div id="robot-box">
+            <img class="teams-pic"src="images/robot.png" alt="Robot picture" />
+          </div>
+          <div class="teams-about-pic" id="teams-pic1">
+            <img class="teams-pic" src="images/code.png" alt="Picture of codes" />
+          </div>
+          <div class="teams-about-pic" id="teams-pic2">
+            <img class="teams-pic" src="images/chaos.png" alt="Picture of codes" />
+          </div>
+          <div class="teams-about-pic" id="teams-pic3">
+            <img class="teams-pic" src="images/tools.png" alt="Picture of codes" />
+          </div>
+        </div>
+
+        <div id="teams-text-box">
+          <div class="teams-t-img-box" id="teams-t1">
+            <div class="teams-t-box">
+              <h4>Write better code</h4>
+              <p>Collaboration makes perfect. The conversations and code reviews that happen in pull requests help your team share the weight of your work and improve the software you build. <span>Learn about code review.</span></p>
+            </div>
+            <div class="teams-img-box">
+              <svg class="teams-arrow-right" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path></svg>
+            </div>
+          </div>
+
+          <div class="teams-t-img-box" id="teams-t2">
+            <div class="teams-t-box">
+              <h4>Manage your chaos</h4>
+              <p>Take a deep breath. On GitHub, project management happens in issues and project boards, right alongside your code. All you have to do is mention a teammate to get them involved.<span> Learn about project management.</span></p>
+            </div>
+            <div class="teams-img-box">
+              <svg class="teams-arrow-right" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path></svg>
+            </div>
+          </div>
+
+          <div class="teams-t-img-box" id="teams-t3">
+            <div class="teams-t-box">
+              <h4>Find the right tools</h4>
+              <p>Browse and buy apps from GitHub marketplace with your GitHub account. Find the tools you like or discovernew favorites-than start using them in minutes. <span>Learn about integrations.</span></p>
+            </div>
+            <div class="teams-img-box">
+              <svg class="teams-arrow-right" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title-box">
+        <p class="text2 text3">See how the world's leading companies use GitHub Enterprise.</p>
+
+        <div class="main-pic-box">
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic1">
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>MGM Resorts International</h6>
+              <p class="frame-p">Hospitality</p>
+              <button>Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic2">
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>Nationwide</h6>
+              <p class="frame-p">Insurance</p>
+              <button>Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic3">
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>SAP</h6>
+              <p class="frame-p">Business Software</p>
+              <button>Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic4">
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>Spotify</h6>
+              <p class="frame-p">Technology / Streaming</p>
+              <button>Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </section>
+      <!-- teams box end -->
+
+      <!-- business needs start-->
+      <section class="main-box box">
+        <div class="title-box">
+          <p class="text1">Security and administration</p>
+          <h1>Your bussiness needs, met</h1>
+          <p class="text2">From flexible hosting to granular access controls, we've got your security requirements covered.</p>
+          <button class="title-btn">Learn how GitHub Enterprise works<span class="title-span">&rarr;</span></button>
+        </div>
+
+        <div class="main-security-box">
+          <div class="security-img-b">
+            <img class="security-img" src="images/codesecurity.png" alt="Secure code image"/>
+          </div>
+          <div class="security-text-box">
+            <div class="security-text">
+              <h4>Code security</h4>
+              <p class="s-p">Prevent problems before they happen. Protected branches, signed commits, and required status checks protect your work and help you mantaina high standard for your code.</p>
+            </div>
+            <div class="security-text">
+              <h4>Access controlled</h4>
+              <p class="s-p">Encourage teams to work together while limiting access to those who need it with granular premissions and authentication through SAML/SSO and LDAP.</p>
+            </div>    
+          </div>
+        </div>
+
+        <div class="main-hosted-box">
+          <div class="shadow-div1 shadow-div"></div>
+          <div class="shadow-div2 shadow-div"></div>
+          <div class="hosted-box-img">
+            <img src="images/hosted.png" />
+          </div>
+          <div class="hosted-box">
+            <h4>Hosted where you need it</h4>
+            <p>Securely and reliably host your work on GitHub using GitHub Enterprise Cloud. Or deploy GitHub Enterprise Server  in your own data centersor in a private cloud using Amazon Web Services, Azure, or Google Cloud Platform.</p>
+            <button class="hb1">Compare plans<span class="hb-arrow">&rarr;</span></button>
+            <button class="hb2">Contact Sales for more information<span class="hb-arrow">&rarr;</span></button>
+          </div>
+          
+          
+        </div>
+      </section>
+      <!-- business needs end -->
+
+      <!-- build starts -->
+      <section class="main-box box build box">
+        <div class="title-box">
+          <p class="text1">Integrations</p>
+          <h1>Build on GitHub</h1>
+          <p class="text2">Customize your processwith GitHub apps and an intuitive API. Integrate the tools you already use or discover new favorites to create a happier more efficientway of working.</p>
+          <button class="title-btn">Learn about integrations<span class="title-span">&rarr;</span></button>
+        </div>
+
+        <div class="build-icon-box">
+          <div class="build-icons icon1"><span class="tooltip">Slack</span></div>
+          <div class="build-icons icon2"><span class="tooltip hub-t">ZenHub</span></div>
+          <div class="build-icons icon3"><span class="tooltip travis-t">Travis CI</span></div>
+          <div class="build-icons icon4"><span class="tooltip atom-t">Atom</span></div>
+          <div class="build-icons icon5"><span class="tooltip circle-t">Circle CI</span></div>
+          <div class="build-icons icon6"><span class="tooltip google-t">Google</span></div>
+          <div class="build-icons icon7"><span class="tooltip climate-t">Code Climate</span></div>
+        </div>
+
+        <div class="text-box">
+          <p>Sometimes, there's more than one tool for the job. Why not try something new?</p>
+          <button class="title-btn text-btn">Browse GitHub Marketplace<span class="title-span">&rarr;</span></button>
+        </div>
+      </section>
+      <!-- build ends -->  
+
+      <!-- developers start -->
+      <section class="main-box box build-box d-box">
+        <div class="title-box">
+          <p class="text1">Community</p>
+          <h1>Welcome home, developers</h1>
+          <p class="text2">GitHub is home to the world's largest community of developers and their projects...</p>
+        </div>
+
+        <div class="main-pic-box">
+          <div class="frame">
+            <div class="frame-pic-box frame-pic1 p-pic1">
+              <img src="images/person1.png" class="img1"/>
+              <img src="images/person11.png" class="img2"/>
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>Russell Keith-Magee</h6>
+              <p class="frame-p">Russell Keith-Magee created BeeWare to fill a gap in his own projects. Today, BeeWare is the go-to project for supporting Python on every platform.</p>
+              <button class="button-pic">Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic2 p-pic2">
+              <img src="images/person2.png" class="img1"/>
+              <img src="images/person12.png" class="img2"/>
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>Kris Nova</h6>
+              <p class="frame-p">Kris Nova quickly developed a passion for open source software. Now she gets work on open source tooling at her job, which includes maintaining operations. </p>
+              <button class="button-pic">Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic3 p-pic3">
+              <img src="images/person3.png" class="img1"/>
+              <img src="images/person13.png" class="img2"/>
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>Evan You</h6>
+              <p class="frame-p">In 2013 Evan founded Vue, a JavaScript framework funded  by the community on Patreon. In 2016 Vue reached 2,000,000 downloads.</p>
+              <button class="button-pic">Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-pic-box frame-pic4 p-pic4">
+              <img src="images/person4.png" class="img1"/>
+              <img src="images/person14.png" class="img2"/>
+              <div class="arrow-box">
+                <p>&#8599;</p>
+              </div>
+            </div>
+            <div class="frame-text-box">
+              <h6>Jess Frazelle</h6>
+              <p class="frame-p">Jesse Frazelle works on Kubernetes full-time. Previously she mantained Docker, a software containrization platform used by thousands of teams.</p>
+              <button class="button-pic">Read more<span class="frame-span">&#8594;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="title-box">
+          <p class="text2">...whether you're making your first commit or sending a Rover to Mars, there's room for you here, too.</p>
+        </div>
+
+      <div class="dev-number-box">
+        <div class="num-box">
+          <div class="circle-num circle1">
+            <h2 class="circle-title">100M<span>*</span><h2>
+            <p class="circle-text">repositories worldwide</p>
+          </div>
+          <div class="num-text">
+             <p>GitHub users create and mantain influental technologies alongside the world's largest <span class="n-span1">open source community</span>.</p>
+             <svg class="num-arrow n-arrow1" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path></svg> 
+          </div>
+        </div>
+
+        <div class="num-box">
+          <div class="circle-num circle2">
+            <h2 class="circle-title">40M<span>*</span><h2>
+            <p class="circle-text">developers <br />worldwide</p>
+          </div>
+          <div class="num-text n-text2">
+            <p><span class="n-span2">Developers</span> use GitHub for personal projects, from experimenting with the new programming languages to hosting their life's work.</p>
+             <svg class="num-arrow n-arrow2" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path></svg> 
+          </div>
+        </div>
+
+        <div class="num-box">
+          <div class="circle-num circle3">
+            <h2 class="circle-title">2.1M<span>*</span><h2>
+            <p class="circle-text">businesses & organizations <br />worldwide</p>
+          </div>
+          <div class="num-text n-text3">
+             <p><span class="n-span3">Bussinesses</span> of all sizes use GitHub to support their development processand to securely build software.</p>
+             <svg class="num-arrow n-arrow3" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"></path></svg> 
+          </div>
+        </div>
+      </div>
+      <div class="important">
+        <p>*As of August 2019</p>
+      </div>
+      </section>  
+      <!-- developers end -->
+
+    </main>  
+    <!-- MAIN END -->
+
+    <!-- footer form start -->
+    <section class="register-box">
+      <div class="register-textform">
+        <div class="register-text">
+          <p>Get started for free - join the millions of developers already using GitHub to share their code, work together, and build amazing things.</p>
+        </div>
+        <div class="register-form-box">
+          <form class="register-form">
+            <div class="input-box">
+              <label for="reg-name">Username</label>
+              <input type="text" name="reg-name" id="reg-name" class="reg-input" placeholder="Pick a username"/>
+            </div>
+            <div class="input-box">
+              <label for="reg-email" class="label">Email</label>
+              <input type="email" name="reg-email" id="reg-email" class="reg-input" placeholder="Your email address"/>
+            </div>
+            <div class="input-box i-box3">
+              <label for="reg-pass" class="label">Password</label>
+              <input type="password" name="reg-pass" id="reg-pass" class="reg-input" placeholder="Create a password"/>
+            </div>
+            <div class="register-btn-box">
+              <button type="button" class="register-btn">Sign up for GitHub</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="register-terms">
+        <p>By clicking "Sign up for GitHub", you agree to our <span>terms of service</span> and <span>privacy statement</span>. We'll occasionally send you account elated emails.</p>
+      </div>
+    </section>
+    <!-- footer form end -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <section class="footer-title-links-box">
+        <div class="footer-title">
+          <h2><a href="index.html">GitHub</a></h2>
+        </div>
+
+        <div class="footer-links-box">
+          <div class="footer-sub-links">
+            <ul>
+              <li class="f-sub-title">Product</li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Enterprise</a></li>
+              <li><a href="#">Customer stories</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-sub-links">
+            <ul>
+              <li class="f-sub-title">Platform</li>
+              <li><a href="#">Developer API</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Atom</a></li>
+              <li><a href="#">Electron</a></li>
+              <li><a href="#">GitHub Desktop</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-sub-links">
+            <ul>
+              <li class="f-sub-title">Support</li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Community Forum</a></li>
+              <li><a href="#">Professional Services</a></li>
+              <li><a href="#">Learning Lab</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Contact GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-sub-links">
+            <ul>
+              <li class="f-sub-title">Company</li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Social Impact</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sub-footer">
+        <div class="privacy-contact-box">
+
+          <div class="contact-box">
+            <ul>
+              <li>
+                <a href="https://twitter.com/github">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" height="18"><path d="M273.5 26.3a109.77 109.77 0 0 1-32.2 8.8 56.07 56.07 0 0 0 24.7-31 113.39 113.39 0 0 1-35.7 13.6 56.1 56.1 0 0 0-97 38.4 54 54 0 0 0 1.5 12.8A159.68 159.68 0 0 1 19.1 10.3a56.12 56.12 0 0 0 17.4 74.9 56.06 56.06 0 0 1-25.4-7v.7a56.11 56.11 0 0 0 45 55 55.65 55.65 0 0 1-14.8 2 62.39 62.39 0 0 1-10.6-1 56.24 56.24 0 0 0 52.4 39 112.87 112.87 0 0 1-69.7 24 119 119 0 0 1-13.4-.8 158.83 158.83 0 0 0 86 25.2c103.2 0 159.6-85.5 159.6-159.6 0-2.4-.1-4.9-.2-7.3a114.25 114.25 0 0 0 28.1-29.1" fill="currentColor" class="contact-logo"></path></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 15.4" height="18"><path d="M14.5 0H.8a.88.88 0 0 0-.8.9v13.6a.88.88 0 0 0 .8.9h7.3v-6h-2V7.1h2V5.4a2.87 2.87 0 0 1 2.5-3.1h.5a10.87 10.87 0 0 1 1.8.1v2.1h-1.3c-1 0-1.1.5-1.1 1.1v1.5h2.3l-.3 2.3h-2v5.9h3.9a.88.88 0 0 0 .9-.8V.8a.86.86 0 0 0-.8-.8z" fill="currentColor" class="contact-logo"></path></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/github">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.17 13.6" height="16"><path d="M18.77 2.13A2.4 2.4 0 0 0 17.09.42C15.59 0 9.58 0 9.58 0a57.55 57.55 0 0 0-7.5.4A2.49 2.49 0 0 0 .39 2.13 26.27 26.27 0 0 0 0 6.8a26.15 26.15 0 0 0 .39 4.67 2.43 2.43 0 0 0 1.69 1.71c1.52.42 7.5.42 7.5.42a57.69 57.69 0 0 0 7.51-.4 2.4 2.4 0 0 0 1.68-1.71 25.63 25.63 0 0 0 .4-4.67 24 24 0 0 0-.4-4.69zM7.67 9.71V3.89l5 2.91z" fill="currentColor" class="contact-logo"></path></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHuUSPqskUsTQAAAXGnLkpo_FOWmV4MRzxx_3EmSbio1AvyFuKbsCQ9w1wBa66s90BN9SgL-ERCF9RHFH31UI-A9eTtvgk-trKMnd0NaBad64lUL3LW4vXS35w8lwAAhW-HHVQ=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgithub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" height="18"><path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" fill="currentColor" class="contact-logo"></path></svg>
+                </a>
+              </li>
+              <li>
+                <a href="index.html">
+                  <svg height="20" alt="GitHub" viewBox="0 0 16 16" version="1.1" width="20" aria-hidden="true"><path class="contact-logo" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="privacy-box">
+            <ul>
+              <li><a href="https://github.com/zoranbrbora33">&copy; 2020 Zoran Brbora</a></li>
+              <li class="privacy-link"><a href="#">Terms</a></li>
+              <li class="privacy-link"><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </footer>
+    <!-- FOOTER END -->
+
+  </div>
+  <!-- WRAPPER END -->
+ 
+  
+</body>
+
+</html>
